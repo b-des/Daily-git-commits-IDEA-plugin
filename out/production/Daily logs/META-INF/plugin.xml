@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Daily commits</name>
+  <version>1.0</version>
+  <vendor email="alltelex@gmail.com" url="https://github.com/b-des/">Andriy Protsenko</vendor>
+
+  <description><![CDATA[
+      Quick access to git commits for current day.
+      Open pop-up with commits subject for the current day.
+      Convenient to save your work in track systems.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Open pop-up with commits for current day
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="com.github.bdes.dailylog.DailyLogsPopupAction" class="com.github.bdes.dailylog.DailyLogsPopupAction"
+            text="Today&#39;s commits" description="Show logs for today">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut first-keystroke="ctrl alt C"  keymap="$default"/>
+      <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
+    </action>
+  </actions>
+
+</idea-plugin>
