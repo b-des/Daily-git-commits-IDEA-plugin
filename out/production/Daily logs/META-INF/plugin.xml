@@ -5,8 +5,7 @@
   <vendor email="alltelex@gmail.com" url="https://github.com/b-des/">Andriy Protsenko</vendor>
 
   <description><![CDATA[
-      Quick access to git commits for current day.
-      Open pop-up with commits subject for the current day.
+      Quick access to git commits - opens pop-up with commits subject for the current day.
       Convenient to save your work in track systems.
     ]]></description>
 
